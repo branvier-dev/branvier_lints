@@ -1,0 +1,14 @@
+name: branvier_lints_example
+description: Branvier Lints example.
+publish_to: none
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  branvier_lints:
+    path: ../
