@@ -10,8 +10,6 @@
 library branvier_lints;
 
 import 'package:custom_lint_builder/custom_lint_builder.dart';
-import 'package:leancode_lint/leancode_lint.dart' as leancode;
-import 'package:nilts/nilts.dart' as nilts;
 import 'package:pyramid_lint/pyramid_lint.dart' as pyramid;
 import 'package:solid_lints/solid_lints.dart' as solid;
 
@@ -24,16 +22,12 @@ PluginBase createPlugin() => _BranvierLints();
 class _BranvierLints extends PluginBase {
   @override
   List<LintRule> getLintRules(CustomLintConfigs configs) => [
-        ...leancode.createPlugin().getLintRules(configs),
-        ...nilts.createPlugin().getLintRules(configs),
         ...pyramid.createPlugin().getLintRules(configs),
         ...solid.createPlugin().getLintRules(configs),
       ];
 
   @override
   List<Assist> getAssists() => [
-        ...leancode.createPlugin().getAssists(),
-        ...nilts.createPlugin().getAssists(),
         ...pyramid.createPlugin().getAssists(),
         ...solid.createPlugin().getAssists(),
 

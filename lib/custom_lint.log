@@ -987,3 +987,613 @@ at:
 
 The Dart VM service is listening on http://127.0.0.1:53592/8UjNthPhrJw=/
 The Dart DevTools debugger and profiler is available at: http://127.0.0.1:53592/8UjNthPhrJw=/devtools?uri=ws://127.0.0.1:53592/8UjNthPhrJw=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:54442/K-2Cfff1wdw=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54442/K-2Cfff1wdw=/devtools?uri=ws://127.0.0.1:54442/K-2Cfff1wdw=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:54488/zLfNn8_Lyjo=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54488/zLfNn8_Lyjo=/devtools?uri=ws://127.0.0.1:54488/zLfNn8_Lyjo=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:54583/EVwpuSdbGs8=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54583/EVwpuSdbGs8=/devtools?uri=ws://127.0.0.1:54583/EVwpuSdbGs8=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:54627/CtazMar7kRo=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54627/CtazMar7kRo=/devtools?uri=ws://127.0.0.1:54627/CtazMar7kRo=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:54713/jSKmrutP01Y=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54713/jSKmrutP01Y=/devtools?uri=ws://127.0.0.1:54713/jSKmrutP01Y=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:54788/Ts1Oh3vNNiI=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54788/Ts1Oh3vNNiI=/devtools?uri=ws://127.0.0.1:54788/Ts1Oh3vNNiI=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:55965/F0vw81tPo_c=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:55965/F0vw81tPo_c=/devtools?uri=ws://127.0.0.1:55965/F0vw81tPo_c=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:56058/C2wJuvk4u_I=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56058/C2wJuvk4u_I=/devtools?uri=ws://127.0.0.1:56058/C2wJuvk4u_I=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:56132/HFekG-19PYY=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56132/HFekG-19PYY=/devtools?uri=ws://127.0.0.1:56132/HFekG-19PYY=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:56214/swsIcuzsecA=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56214/swsIcuzsecA=/devtools?uri=ws://127.0.0.1:56214/swsIcuzsecA=/ws
+[custom_lint] 2024-03-12T10:17:23.639456 Error: Couldn't resolve the package 'leancode_lint' in 'package:leancode_lint/leancode_lint.dart'.
+[custom_lint] 2024-03-12T10:17:23.639456 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:13:8: Error: Not found: 'package:leancode_lint/leancode_lint.dart'
+[custom_lint] 2024-03-12T10:17:23.639456 import 'package:leancode_lint/leancode_lint.dart' as leancode;
+[custom_lint] 2024-03-12T10:17:23.639456        ^
+[custom_lint] 2024-03-12T10:17:23.639456 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:26:21: Error: Method not found: 'createPlugin'.
+[custom_lint] 2024-03-12T10:17:23.639456         ...leancode.createPlugin().getLintRules(configs),
+[custom_lint] 2024-03-12T10:17:23.639456                     ^^^^^^^^^^^^
+[custom_lint] 2024-03-12T10:17:23.639456 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:33:21: Error: Method not found: 'createPlugin'.
+[custom_lint] 2024-03-12T10:17:23.639456         ...leancode.createPlugin().getAssists(),
+[custom_lint] 2024-03-12T10:17:23.639456                     ^^^^^^^^^^^^
+[custom_lint] 2024-03-12T10:17:23.639456
+[custom_lint] 2024-03-12T10:17:23.639456
+Failed to start pluginsThe request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+Bad state: Failed to start the plugins.
+at:
+#0      SocketCustomLintServerToClientChannel._checkInitializationFail.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:232:11)
+<asynchronous suspension>
+#1      Future.any.onValue (dart:async/future.dart:618:5)
+<asynchronous suspension>
+
+The Dart VM service is listening on http://127.0.0.1:56290/4WTcIdH0PRk=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56290/4WTcIdH0PRk=/devtools?uri=ws://127.0.0.1:56290/4WTcIdH0PRk=/ws
+[custom_lint] 2024-03-12T10:17:36.262643 Error: Couldn't resolve the package 'leancode_lint' in 'package:leancode_lint/leancode_lint.dart'.
+[custom_lint] 2024-03-12T10:17:36.262643 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:13:8: Error: Not found: 'package:leancode_lint/leancode_lint.dart'
+[custom_lint] 2024-03-12T10:17:36.262643 import 'package:leancode_lint/leancode_lint.dart' as leancode;
+[custom_lint] 2024-03-12T10:17:36.262643        ^
+[custom_lint] 2024-03-12T10:17:36.262643 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:26:21: Error: Method not found: 'createPlugin'.
+[custom_lint] 2024-03-12T10:17:36.262643         ...leancode.createPlugin().getLintRules(configs),
+[custom_lint] 2024-03-12T10:17:36.262643                     ^^^^^^^^^^^^
+[custom_lint] 2024-03-12T10:17:36.262643 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:33:21: Error: Method not found: 'createPlugin'.
+[custom_lint] 2024-03-12T10:17:36.262643         ...leancode.createPlugin().getAssists(),
+[custom_lint] 2024-03-12T10:17:36.262643                     ^^^^^^^^^^^^
+[custom_lint] 2024-03-12T10:17:36.262643
+[custom_lint] 2024-03-12T10:17:36.262643
+Failed to start pluginsThe request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+Bad state: Failed to start the plugins.
+at:
+#0      SocketCustomLintServerToClientChannel._checkInitializationFail.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:232:11)
+<asynchronous suspension>
+#1      Future.any.onValue (dart:async/future.dart:618:5)
+<asynchronous suspension>
+
+The Dart VM service is listening on http://127.0.0.1:56601/8Zzbd1VnVfE=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56601/8Zzbd1VnVfE=/devtools?uri=ws://127.0.0.1:56601/8Zzbd1VnVfE=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:56703/A-_oRHnGMRY=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56703/A-_oRHnGMRY=/devtools?uri=ws://127.0.0.1:56703/A-_oRHnGMRY=/ws
+The request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+UnimplementedError
+at:
+#0      SocketCustomLintServerToClientChannel.setContextRoots (package:custom_lint/src/v2/server_to_client_channel.dart:148:5)
+#1      CustomLintServer._maybeSpawnCustomLintPlugin (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:347:35)
+#2      CustomLintServer._handleAnalysisSetContextRoots.<anonymous closure> (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:335:15)
+#3      PendingOperation.run (package:custom_lint/src/async_operation.dart:18:22)
+#4      CustomLintServer._handleAnalysisSetContextRoots (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:332:15)
+#5      RequestX.when (package:custom_lint/src/request_extension.dart:136:47)
+#6      CustomLintServer._handleRequest (package:custom_lint/src/v2/custom_lint_analyzer_plugin.dart:167:36)
+#7      _rootRunUnary (dart:async/zone.dart:1407:47)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#9      _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#10     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#11     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#12     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#13     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#14     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#15     _rootRunUnary (dart:async/zone.dart:1407:47)
+#16     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#17     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#18     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#19     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#20     _ForwardingStreamSubscription._add (dart:async/stream_pipe.dart:123:11)
+#21     _MapStream._handleData (dart:async/stream_pipe.dart:218:10)
+#22     _ForwardingStreamSubscription._handleData (dart:async/stream_pipe.dart:153:13)
+#23     _rootRunUnary (dart:async/zone.dart:1407:47)
+#24     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#25     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#26     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#27     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#28     _SyncBroadcastStreamController._sendData (dart:async/broadcast_stream_controller.dart:377:25)
+#29     _BroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:244:5)
+#30     _AsBroadcastStreamController.add (dart:async/broadcast_stream_controller.dart:474:11)
+#31     _rootRunUnary (dart:async/zone.dart:1415:13)
+#32     _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#33     _CustomZone.runUnaryGuarded (dart:async/zone.dart:1217:7)
+#34     _BufferingStreamSubscription._sendData (dart:async/stream_impl.dart:365:11)
+#35     _BufferingStreamSubscription._add (dart:async/stream_impl.dart:297:7)
+#36     _SyncStreamControllerDispatch._sendData (dart:async/stream_controller.dart:784:19)
+#37     _StreamController._add (dart:async/stream_controller.dart:658:7)
+#38     _StreamController.add (dart:async/stream_controller.dart:606:5)
+#39     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:184:12)
+
+The Dart VM service is listening on http://127.0.0.1:56836/eTXXFLEiFPQ=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56836/eTXXFLEiFPQ=/devtools?uri=ws://127.0.0.1:56836/eTXXFLEiFPQ=/ws

@@ -64,9 +64,9 @@ class _MyWidgetState extends State<MyWidget> with TickerProviderStateMixin {
         height: size.height,
         child: Column(
           children: [
+            // ignore: avoid_single_child_in_multi_child_widgets
             const Column(
               children: [
-                Placeholder(),
                 Placeholder(),
               ],
             ),

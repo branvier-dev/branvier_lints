@@ -42,3 +42,73 @@ The Dart VM service is listening on http://127.0.0.1:53428/qCG_ehYlm9g=/
 The Dart DevTools debugger and profiler is available at: http://127.0.0.1:53428/qCG_ehYlm9g=/devtools?uri=ws://127.0.0.1:53428/qCG_ehYlm9g=/ws
 The Dart VM service is listening on http://127.0.0.1:53592/8UjNthPhrJw=/
 The Dart DevTools debugger and profiler is available at: http://127.0.0.1:53592/8UjNthPhrJw=/devtools?uri=ws://127.0.0.1:53592/8UjNthPhrJw=/ws
+The Dart VM service is listening on http://127.0.0.1:54442/K-2Cfff1wdw=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54442/K-2Cfff1wdw=/devtools?uri=ws://127.0.0.1:54442/K-2Cfff1wdw=/ws
+The Dart VM service is listening on http://127.0.0.1:54488/zLfNn8_Lyjo=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54488/zLfNn8_Lyjo=/devtools?uri=ws://127.0.0.1:54488/zLfNn8_Lyjo=/ws
+The Dart VM service is listening on http://127.0.0.1:54583/EVwpuSdbGs8=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54583/EVwpuSdbGs8=/devtools?uri=ws://127.0.0.1:54583/EVwpuSdbGs8=/ws
+The Dart VM service is listening on http://127.0.0.1:54627/CtazMar7kRo=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54627/CtazMar7kRo=/devtools?uri=ws://127.0.0.1:54627/CtazMar7kRo=/ws
+The Dart VM service is listening on http://127.0.0.1:54713/jSKmrutP01Y=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54713/jSKmrutP01Y=/devtools?uri=ws://127.0.0.1:54713/jSKmrutP01Y=/ws
+The Dart VM service is listening on http://127.0.0.1:54788/Ts1Oh3vNNiI=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:54788/Ts1Oh3vNNiI=/devtools?uri=ws://127.0.0.1:54788/Ts1Oh3vNNiI=/ws
+The Dart VM service is listening on http://127.0.0.1:55965/F0vw81tPo_c=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:55965/F0vw81tPo_c=/devtools?uri=ws://127.0.0.1:55965/F0vw81tPo_c=/ws
+The Dart VM service is listening on http://127.0.0.1:56058/C2wJuvk4u_I=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56058/C2wJuvk4u_I=/devtools?uri=ws://127.0.0.1:56058/C2wJuvk4u_I=/ws
+The Dart VM service is listening on http://127.0.0.1:56132/HFekG-19PYY=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56132/HFekG-19PYY=/devtools?uri=ws://127.0.0.1:56132/HFekG-19PYY=/ws
+The Dart VM service is listening on http://127.0.0.1:56214/swsIcuzsecA=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56214/swsIcuzsecA=/devtools?uri=ws://127.0.0.1:56214/swsIcuzsecA=/ws
+[custom_lint] 2024-03-12T10:17:23.639456 Error: Couldn't resolve the package 'leancode_lint' in 'package:leancode_lint/leancode_lint.dart'.
+[custom_lint] 2024-03-12T10:17:23.639456 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:13:8: Error: Not found: 'package:leancode_lint/leancode_lint.dart'
+[custom_lint] 2024-03-12T10:17:23.639456 import 'package:leancode_lint/leancode_lint.dart' as leancode;
+[custom_lint] 2024-03-12T10:17:23.639456        ^
+[custom_lint] 2024-03-12T10:17:23.639456 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:26:21: Error: Method not found: 'createPlugin'.
+[custom_lint] 2024-03-12T10:17:23.639456         ...leancode.createPlugin().getLintRules(configs),
+[custom_lint] 2024-03-12T10:17:23.639456                     ^^^^^^^^^^^^
+[custom_lint] 2024-03-12T10:17:23.639456 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:33:21: Error: Method not found: 'createPlugin'.
+[custom_lint] 2024-03-12T10:17:23.639456         ...leancode.createPlugin().getAssists(),
+[custom_lint] 2024-03-12T10:17:23.639456                     ^^^^^^^^^^^^
+[custom_lint] 2024-03-12T10:17:23.639456
+[custom_lint] 2024-03-12T10:17:23.639456
+Failed to start pluginsThe request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+Bad state: Failed to start the plugins.
+at:
+#0      SocketCustomLintServerToClientChannel._checkInitializationFail.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:232:11)
+<asynchronous suspension>
+#1      Future.any.onValue (dart:async/future.dart:618:5)
+<asynchronous suspension>
+
+The Dart VM service is listening on http://127.0.0.1:56290/4WTcIdH0PRk=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56290/4WTcIdH0PRk=/devtools?uri=ws://127.0.0.1:56290/4WTcIdH0PRk=/ws
+[custom_lint] 2024-03-12T10:17:36.262643 Error: Couldn't resolve the package 'leancode_lint' in 'package:leancode_lint/leancode_lint.dart'.
+[custom_lint] 2024-03-12T10:17:36.262643 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:13:8: Error: Not found: 'package:leancode_lint/leancode_lint.dart'
+[custom_lint] 2024-03-12T10:17:36.262643 import 'package:leancode_lint/leancode_lint.dart' as leancode;
+[custom_lint] 2024-03-12T10:17:36.262643        ^
+[custom_lint] 2024-03-12T10:17:36.262643 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:26:21: Error: Method not found: 'createPlugin'.
+[custom_lint] 2024-03-12T10:17:36.262643         ...leancode.createPlugin().getLintRules(configs),
+[custom_lint] 2024-03-12T10:17:36.262643                     ^^^^^^^^^^^^
+[custom_lint] 2024-03-12T10:17:36.262643 /Users/art/Documents/GitHub/branvier-lints/lib/branvier_lints.dart:33:21: Error: Method not found: 'createPlugin'.
+[custom_lint] 2024-03-12T10:17:36.262643         ...leancode.createPlugin().getAssists(),
+[custom_lint] 2024-03-12T10:17:36.262643                     ^^^^^^^^^^^^
+[custom_lint] 2024-03-12T10:17:36.262643
+[custom_lint] 2024-03-12T10:17:36.262643
+Failed to start pluginsThe request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+Bad state: Failed to start the plugins.
+at:
+#0      SocketCustomLintServerToClientChannel._checkInitializationFail.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:232:11)
+<asynchronous suspension>
+#1      Future.any.onValue (dart:async/future.dart:618:5)
+<asynchronous suspension>
+
+The Dart VM service is listening on http://127.0.0.1:56601/8Zzbd1VnVfE=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56601/8Zzbd1VnVfE=/devtools?uri=ws://127.0.0.1:56601/8Zzbd1VnVfE=/ws
+The Dart VM service is listening on http://127.0.0.1:56703/A-_oRHnGMRY=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56703/A-_oRHnGMRY=/devtools?uri=ws://127.0.0.1:56703/A-_oRHnGMRY=/ws
+The Dart VM service is listening on http://127.0.0.1:56836/eTXXFLEiFPQ=/
+The Dart DevTools debugger and profiler is available at: http://127.0.0.1:56836/eTXXFLEiFPQ=/devtools?uri=ws://127.0.0.1:56836/eTXXFLEiFPQ=/ws
