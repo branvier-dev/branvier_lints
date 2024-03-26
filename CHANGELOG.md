@@ -1,10 +1,10 @@
 # Changelog
 
-## 0.3.0 - Mar 26, 2024
+## 0.3.1 - Mar 26, 2024
 
 - Bump `custom_lint_builder` to `^0.6.4`.
 - Updated `analysis_options.yaml` docs.
-- Changed `cyclomatic_complexity` and `function_lines_of_code` to their default values.
+- Changed `cyclomatic_complexity` and `function_lines_of_code` to their recommended values.
 - Disabled:
   - max_lines_for_file
   - max_lines_for_function (only Pyramid)

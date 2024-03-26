@@ -53,7 +53,7 @@ analyzer:
 # Pyramid https://docs.page/charlescyt/pyramid_lint/available-lints
 custom_lint:
   rules:
-    # Solid. Follows Effective Dart and use Flutter own widget docs as reference.
+    # Solid - PREFERENCES
     - member_ordering:
       order:
         - constructors
@@ -76,10 +76,10 @@ custom_lint:
         - deactivate_method
         - dispose_method
         - build_method
-
-    # Solid. Late variables aren't runtime safe, but if initialized, they are.
     - avoid_late_keyword:
-      allow_initialized: true 
+      allow_initialized: true # Why? Late variables are runtime safe if initialized.
+    - cyclomatic_complexity:
+      max_complexity: 10 #TODO - https://github.com/solid-software/solid_lints/issues/146
 
     # Solid - DISABLED
     - no_magic_number: false # broken
