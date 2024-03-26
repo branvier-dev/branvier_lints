@@ -1,4 +1,4 @@
-// ignore_for_file: implementation_imports
+// ignore_for_file: implementation_imports, invalid_use_of_internal_member
 
 /// Branvier Lints is a set of custom lints for Dart and Flutter projects.
 /// -
@@ -22,16 +22,43 @@ PluginBase createPlugin() => _BranvierLints();
 class _BranvierLints extends PluginBase {
   @override
   List<LintRule> getLintRules(CustomLintConfigs configs) => [
-        ...pyramid.createPlugin().getLintRules(configs),
+        ...pyramid.createPlugin().getLintRules(configs.withWarning()),
         ...solid.createPlugin().getLintRules(configs),
       ];
 
   @override
   List<Assist> getAssists() => [
-        ...pyramid.createPlugin().getAssists(),
+        ...pyramid.createPlugin().getAssists().withoutListenableWraps(),
         ...solid.createPlugin().getAssists(),
 
         // * Branvier Assists
         WrapWithAsyncBuilder(),
       ];
+}
+
+extension on CustomLintConfigs {
+  /// Converts all lint rules to warnings
+  CustomLintConfigs withWarning() {
+    return CustomLintConfigs(
+      verbose: false,
+      debug: false,
+      enableAllLintRules: enableAllLintRules,
+      rules: rules.map((name, options) {
+        final newOptions = LintOptions.fromYaml(
+          {...options.json, 'severity': 'warning'},
+          enabled: options.enabled,
+        );
+
+        return MapEntry(name, newOptions);
+      }),
+    );
+  }
+}
+
+extension on List<Assist> {
+  /// Removes ListenableBuilder and ValueListenableBuilder wraps from assist.
+  List<Assist> withoutListenableWraps() {
+    removeWhere((e) => '${e.runtimeType}'.contains('Listenable'));
+    return this;
+  }
 }

@@ -54,10 +54,6 @@ class _MyWidgetState extends State<MyWidget> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
 
-    Navigator.push(context, '' as Route);
-
-    // Future.wait();
-
     return Padding(
       padding: const EdgeInsets.all(8),
       child: SizedBox(

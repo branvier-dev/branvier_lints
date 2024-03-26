@@ -142,17 +142,29 @@ custom_lint:
     # Solid. Seems broken, it is not working as expected. Re-check later.
     - avoid_unnecessary_type_assertions: false
 
-    # Nilts. Only necessary for apps that uses different text directions. Defaults to false.
-    - no_support_multi_text_direction: false
+    # Solid. Conflicts with Pyramid. Pyramid has auto-fixes for this.
+    - prefer_first: false
 
-    # Leancode. Using `err` and `st` is too opinionated. Let's not enforce it.
-    - catch_parameter_names: false
+    # Solid. Conflicts with Pyramid. Pyramid has auto-fixes for this.
+    - prefer_last: false
+
+    # Solid. Conflicts with Pyramid.
+    - no_empty_block: false
+
+    # Pyramid. #TODO - we are thinking about disabling this rule.
+    # - prefer_library_prefixes: false
+
+    # Pyramid. Conflicts with Solid's member_ordering.
+    - class_members_ordering: false
+
+    # Pyramid. Flutter already has a rule for this.
+    - avoid_dynamic: false
 
     # Pyramid. #TODO - suggest to ignore build method.
     - max_lines_for_function: false
 
     # Pyramid. Not necessary if State class is already private.
-    - avoid_widget_state_public_members: false
+    - avoid_public_members_in_states: false
 
     # Pyramid. #TODO - false positive when extending classes like ChangeNotifier
     # - prefer_declaring_const_constructors: false
