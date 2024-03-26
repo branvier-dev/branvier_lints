@@ -249,51 +249,51 @@ custom_lint:
     - proper_super_calls
     #!SECTION
     #SECTION - Pyramid Lint 2.0.0
-    - always_put_doc_comments_before_annotations
+    - always_put_doc_comments_before_annotations # quick_fix
     - always_specify_parameter_names
     - avoid_abbreviations_in_doc_comments
     - avoid_dynamic
     - avoid_empty_blocks
-    - avoid_inverted_boolean_expressions
+    - avoid_inverted_boolean_expressions # quick_fix
     - avoid_mutable_global_variables
     - avoid_nested_if
     - avoid_positional_fields_in_records
     - avoid_public_members_in_states
-    - avoid_redundant_pattern_field_names
+    - avoid_redundant_pattern_field_names # quick_fix
     - avoid_returning_widgets
-    - avoid_single_child_in_flex
+    - avoid_single_child_in_flex # quick_fix
     - avoid_unused_parameters
     - boolean_prefixes
     - class_members_ordering
-    - dispose_controllers
+    - dispose_controllers # quick_fix
     - max_lines_for_file
-    - max_lines_for_function
+    - max_lines_for_function 
     - max_switch_cases
     - no_duplicate_imports
     - no_self_comparisons
     - prefer_async_await
-    - prefer_async_callback
-    - prefer_border_from_border_side
-    - prefer_border_radius_all
-    - prefer_const_constructor_declarations
-    - prefer_dedicated_media_query_functions
-    - prefer_immediate_return
-    - prefer_iterable_any
-    - prefer_iterable_every
-    - prefer_iterable_first
-    - prefer_iterable_last
-    - prefer_library_prefixes
-    - prefer_new_line_before_return
-    - prefer_text_rich
+    - prefer_async_callback # quick_fix
+    - prefer_border_from_border_side # quick_fix
+    - prefer_border_radius_all # quick_fix
+    - prefer_const_constructor_declarations # quick_fix
+    - prefer_dedicated_media_query_functions # quick_fix
+    - prefer_immediate_return # quick_fix
+    - prefer_iterable_any # quick_fix
+    - prefer_iterable_every # quick_fix
+    - prefer_iterable_first # quick_fix
+    - prefer_iterable_last # quick_fix
+    - prefer_library_prefixes # quick_fix
+    - prefer_new_line_before_return # quick_fix
+    - prefer_text_rich # quick_fix
     - prefer_underscore_for_unused_callback_parameters
-    - prefer_void_callback
-    - proper_edge_insets_constructors
+    - prefer_void_callback # quick_fix
+    - proper_edge_insets_constructors # quick_fix
     - proper_expanded_and_flexible
-    - proper_from_environment
-    - proper_super_dispose
-    - proper_super_init_state
-    - unnecessary_nullable_return_type
-    - use_spacer
+    - proper_from_environment # quick_fix
+    - proper_super_dispose # quick_fix
+    - proper_super_init_state # quick_fix
+    - unnecessary_nullable_return_type # quick_fix
+    - use_spacer # quick_fix
     # assist InvertBooleanExpression
     # assist SwapThenElseExpression
     # assist UseEdgeInsetsZero

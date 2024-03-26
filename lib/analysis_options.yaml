@@ -1,22 +1,20 @@
 # We include and activate all lint rules, later below we disable the not used or desired ones.
 # You can find a list of all lint rules to put in your all_lint_rules.yaml file here:
-# https://dart-lang.github.io/linter/lints/options/options.html
+# https://dart.dev/tools/linter-rules/all
 #
-# For a full comparison of all lint rules settings in rule styles listed below, please see this
+# For a comparison of all lint rules settings in rule styles listed below, please see this Google
 # sheet: https://docs.google.com/spreadsheets/d/1Nc1gFjmCOMubWZD7f2E4fLhWN7LYaOE__tsA7bf2NjA
 #
-# The version used for comparing setting with other linters for the settings
-# that are turned OFF here, or have a quick placeholder for turning it OFF, are
-# as follows:
+# Versions used for comparison:
 #
-# Core           v2.1.0     : https://pub.dev/packages/lints
-# Recommended    v2.0.0     : https://pub.dev/packages/lints
-# Flutter Lints  v2.1.0     : https://pub.dev/packages/flutter_lints
+# Core           v3.0.0     : https://pub.dev/packages/lints
+# Recommended    v3.0.0     : https://pub.dev/packages/lints
+# Flutter Lints  v3.0.1     : https://pub.dev/packages/flutter_lints
 # Pedantic       v1.11.1    : https://pub.dev/packages/pedantic
 # Effective Dart v1.3.2     : https://pub.dev/packages/effective_dart
 # Flutter repo   master     : https://github.com/flutter/flutter/blob/master/analysis_options.yaml
-# Lint           v1.8.2     : https://pub.dev/packages/lint
-# VG Analysis    v3.0.0     : https://pub.dev/packages/very_good_analysis
+# Lint           v2.2.0     : https://pub.dev/packages/lint
+# VG Analysis    v5.1.0     : https://pub.dev/packages/very_good_analysis
 # RydMike        v2.1.0     : https://gist.github.com/rydmike/fdb53ddd933c37d20e6f3188a936cd4c
 #
 include: all_lint_rules.yaml
@@ -25,7 +23,6 @@ analyzer:
   plugins:
     - custom_lint
   exclude:
-    # Exclude generated files.
     - "**/*.g.dart"
     - "**/*.freezed.dart"
     - '*.mocks.dart'
@@ -34,69 +31,28 @@ analyzer:
     - "test/.test_coverage.dart"
     - "bin/cache/**"
     - "lib/generated_plugin_registrant.dart"
-    # - "**/*_model.dart"
-    # - "**/*_dto.dart"
 
   # For more information see:
   # https://dart.dev/guides/language/analysis-options#enabling-additional-type-checks
   language:
     strict-casts: true
     strict-inference: true
-
-    # Why? Sometimes we need raw Map casting, and Map<dynamic, dynamic> is too verbose.
-    # We have many rules that enforce type safety, so we can disable this one.
-    strict-raw-types: false
+    strict-raw-types: false # Why? Too verbose. Ex: Map<dynamic, dynamic> instead of Map.
 
   errors:
-    # They are not errors, they are just todos.
-    todo: ignore
+    todo: ignore # Why? They are not errors, they are just todos.
+    included_file_warning: ignore # Why? We include all_lint_rules.yaml, which has conflicting rules.
+    invalid_annotation_target: ignore # freezed
+    inference_failure_on_instance_creation: ignore # Why? Discarded types are common like PageRoute<T> and Future<T>.delayed.
+    deprecated_member_use_from_same_package: ignore # Why? We use deprecated members in tests and asserts.
+    missing_return: error # Why? Missing returns are a common source of bugs.
+    parameter_assignments: error # Why? Reassigning parameters is a common source of bugs.
+    missing_required_param: error # Why? Required parameters are required for a reason.
 
-    # Without ignore here, we cause import of all_lint_rules to warn, because some rules conflict.
-    # We explicitly enabled even conflicting rules and are fixing the conflicts in this file.
-    # Put it to warning temporarily if you need to troubleshoot lint rule settings.
-    included_file_warning: ignore
-
-    # Inumerous classes and builders have discarded types like PageRoute<T> and Future<T>.delayed.
-    inference_failure_on_instance_creation: ignore
-
-    # Needed for using Freezed together with Json serializable and meta.
-    # For more info see: https://pub.dev/packages/freezed#install
-    invalid_annotation_target: ignore
-    
-    # Treat missing required parameters as an error, not as a hint or a warning.
-    missing_required_param: error
-
-    # Treat missing returns as an error, not as a hint or a warning.
-    missing_return: error
-
-    # Treats assigning new values to a parameter as a error. Making them always immutable.
-    parameter_assignments: error
-
-    # Allow self-reference to deprecated members. This is done because otherwise we have
-    # to annotate every member in every test, assert, etc. when we deprecate something.
-    deprecated_member_use_from_same_package: ignore
-
-    # Forbid the use of testing members outside of test.
-    invalid_use_of_visible_for_testing_member: error
-
-    # Forbid the use of protected members outside of the package.
-    invalid_use_of_protected_member: error
-
+# Solid follows https://lints.solid.software/docs/rulesets/main guidelines.
+# Pyramid https://docs.page/charlescyt/pyramid_lint/available-lints
 custom_lint:
   rules:
-    # Solid. Late variables aren't type safe, but if initialized, they are.
-    - avoid_late_keyword:
-      allow_initialized: true 
-
-    # Solid. Suggestions for better apis.
-    - avoid_using_api:
-      severity: warning
-      entries:
-        - identifier: wait
-          class_name: Future
-          source: dart:async
-          reason: "Future.wait should be avoided because it loses type safety for the results. Use a Record's `wait` method instead."
-
     # Solid. Follows Effective Dart and use Flutter own widget docs as reference.
     - member_ordering:
       order:
@@ -108,7 +64,6 @@ custom_lint:
         - init_state_method
         - overridden_methods
         - dispose_method
-
       widgets_order:
         - constructors
         - final_fields
@@ -122,92 +77,42 @@ custom_lint:
         - dispose_method
         - build_method
 
-    # Solid. We recommend 4, but 1/2 extra guard clauses are fine. ex `if (value == null) return`;
-    - cyclomatic_complexity:
-      max_complexity: 6
+    # Solid. Late variables aren't runtime safe, but if initialized, they are.
+    - avoid_late_keyword:
+      allow_initialized: true 
 
-    # Solid. Functions should be small and focused. #TODO - suggest to ignore build method.
-    - function_lines_of_code: false
+    # Solid - DISABLED
+    - no_magic_number: false # broken
+    - avoid_unnecessary_type_assertions: false # flutter
+    - prefer_first: false # pyramid
+    - prefer_last: false # pyramid
+    - no_empty_block: false # pyramid
+    - number_of_parameters: false #TODO - https://github.com/solid-software/solid_lints/issues/124
 
-    # Solid. Constants instead of magic numbers, but fractions and inverse numbers are fine.
-    # Why? Really cool idea, but doesn't work as expected. Ex: Color.withOpacity(0.5). // LINT.
-    - no_magic_number: false
-      # allowed: # this paramter is not working.
-      # allowed_in_widget_params: true
-
-    # Solid. We limit it to 4 as 3 is too common, ex: (BuildContext context, State state, Widget child).
-    - number_of_parameters:
-      max_parameters: 4
-
-    # Solid. Seems broken, it is not working as expected. Re-check later.
-    - avoid_unnecessary_type_assertions: false
-
-    # Solid. Conflicts with Pyramid. Pyramid has auto-fixes for this.
-    - prefer_first: false
-
-    # Solid. Conflicts with Pyramid. Pyramid has auto-fixes for this.
-    - prefer_last: false
-
-    # Solid. Conflicts with Pyramid.
-    - no_empty_block: false
-
-    # Pyramid. #TODO - we are thinking about disabling this rule.
-    # - prefer_library_prefixes: false
-
-    # Pyramid. Conflicts with Solid's member_ordering.
-    - class_members_ordering: false
-
-    # Pyramid. Flutter already has a rule for this.
-    - avoid_dynamic: false
-
-    # Pyramid. #TODO - suggest to ignore build method.
-    - max_lines_for_function: false
-
-    # Pyramid. Not necessary if State class is already private.
-    - avoid_public_members_in_states: false
-
-    # Pyramid. #TODO - false positive when extending classes like ChangeNotifier
-    # - prefer_declaring_const_constructors: false
+    # Pyramid - DISABLED
+    - avoid_dynamic: false # flutter
+    - class_members_ordering: false # solid
+    - max_lines_for_file: false # solid
+    - max_lines_for_function: false # solid
+    - max_switch_cases: false # solid
+    - avoid_public_members_in_states: false # not necessary
+    - prefer_const_constructor_declarations: false #TODO - waiting for https://github.com/charlescyt/pyramid_lint/issues/20
 
 linter:
   rules:
-    # DISABLED:
-    #
-    # Why? Kills the inference purpose of Dart. Bad for UseCase and other .call classes.
-    implicit_call_tearoffs: false
-
-    # Why? This has false positives with if-case statements and switch expressions.
-    prefer_final_locals: false
-
-    # Why? This has false positives with FutureBuilder and several other cases.
-    discarded_futures: false
-
-    # Why? Actions needs to use the format. Ex: increment(int value) => _value = value + 1. Etc
-    use_setters_to_change_properties: false
-
-    # Why? False positives. Ex: final user = context.select((UserStore store) => store.user); 
-    avoid_types_on_closure_parameters: false
-
-    # Why? Single line if:s are fine and also recommended in Effective Dart "DO format your code using dartfmt".
-    always_put_control_body_on_new_line: false
-
-    # Why? There are situations where we voluntarily want to catch everything, especially as a library. Flutter itself disables this rule.
-    avoid_catches_without_on_clauses: false
-
-    # Why? Too opinionated, using them is fine, but let's not enforce it.
-    cascade_invocations: false
-
-    # Why? Goes against Dart inference style: DON’T redundantly type annotate initialized local variables. Where:
-    # - DO NOT final List<List<Ingredients>> desserts = <List<Ingredients>>[];
-    # - DO: final desserts = <List<Ingredients>>[];
-    # However you can still type annotate if you want to, but it is not required. Let's not enforce it.
-    always_specify_types: false
-
-    # Why? This rule makes it impossible to infer a num as double. Ex: var value = 0.0 // LINT.
-    prefer_int_literals: false
+    # Flutter - DISABLED:
+    implicit_call_tearoffs: false # Why? Kills the inference purpose of Dart. Bad for UseCase and other .call classes.
+    prefer_final_locals: false # Why? This has false positives with if-case statements and switch expressions.
+    discarded_futures: false # Why? This has false positives with FutureBuilder and several other cases.
+    use_setters_to_change_properties: false # Why? Actions needs to use the format. Ex: increment(int value) => _value = value + 1. Etc
+    avoid_types_on_closure_parameters: false # Why? False positives. Ex: final user = context.select((UserStore store) => store.user); 
+    always_put_control_body_on_new_line: false # Why? Single line if:s are fine and also recommended in Effective Dart "DO format your code using dartfmt".
+    avoid_catches_without_on_clauses: false # Why? There are situations where we voluntarily want to catch everything, especially as a library. Flutter itself disables this rule.
+    cascade_invocations: false # Why? Too opinionated, using them is fine, but let's not enforce it.
+    always_specify_types: false # Why? Too verbose and opinionated and goes against Dart inference style.
+    prefer_int_literals: false # Why? This rule makes it impossible to infer a num as double. Ex: var value = 0.0 // LINT.
 
     # CONFLICTS:
-    #
     prefer_double_quotes: false # Conflicts with prefer_single_quotes.
     avoid_annotating_with_dynamic: false # Conflicts with strict inference.
     prefer_final_parameters: false # Conflicts with avoid_final_parameters and Flutter: `Widget build(final BuildContext context)`.
@@ -222,16 +127,3 @@ linter:
     diagnostic_describe_all_properties: false # flutter
     public_member_api_docs: false # flutter and dart
     sort_pub_dependencies: false # flutter and dart
-
-    # TESTING ENABLED
-    # We don't mind this lint rule, it is OK, BUT we noticed that
-    # if you want/need to create instances of classes via static helpers in another class, that
-    # this lint rules complains about it. We are OK with preferring a named constructor over a
-    # static method to create an instance from within the same class. However, this lint rule
-    # complained about the above usage too, where we think it makes sense to use a static method.
-    # This rule currently complains about use cases that in some scenarios are impossible to comply
-    # with. Maybe this is another issue with this lint rule. We should investigate it further and
-    # report it if it is an issue. For now, we disable this rule.
-    # A past now resolved issue with this lint rule was: https://github.com/dart-lang/linter/issues/2149
-    # prefer_constructors_over_static_methods: false
-
