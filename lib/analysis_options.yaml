@@ -44,7 +44,6 @@ analyzer:
     included_file_warning: ignore # Why? We include all_lint_rules.yaml, which has conflicting rules.
     invalid_annotation_target: ignore # freezed
     inference_failure_on_instance_creation: ignore # Why? Discarded types are common like PageRoute<T> and Future<T>.delayed.
-    deprecated_member_use_from_same_package: ignore # Why? We use deprecated members in tests and asserts.
     missing_return: error # Why? Missing returns are a common source of bugs.
     parameter_assignments: error # Why? Reassigning parameters is a common source of bugs.
     missing_required_param: error # Why? Required parameters are required for a reason.
@@ -57,19 +56,15 @@ custom_lint:
     - member_ordering:
       order:
         - constructors
-        - final_fields
-        - private_fields
+        - fields
         - getters_setters
-        - methods
         - init_state_method
         - overridden_methods
         - dispose_method
       widgets_order:
         - constructors
-        - final_fields
-        - private_fields
+        - fields
         - getters_setters
-        - methods
         - init_state_method
         - did_change_dependencies_method
         - did_update_widget_method
@@ -78,8 +73,12 @@ custom_lint:
         - build_method
     - avoid_late_keyword:
       allow_initialized: true # Why? Late variables are runtime safe if initialized.
+      ignored_types:
+        - AnimationController
+        - StreamSubscription<dynamic> #TODO - https://github.com/solid-software/solid_lints/issues/157
+        - Timer
     - cyclomatic_complexity:
-      max_complexity: 10 #TODO - https://github.com/solid-software/solid_lints/issues/146
+      max_complexity: 10
 
     # Solid - DISABLED
     - no_magic_number: false # broken

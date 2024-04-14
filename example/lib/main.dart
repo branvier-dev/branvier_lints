@@ -1,5 +1,8 @@
 // ignore_for_file: unreachable_from_main
 
+import 'dart:async';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +20,22 @@ void main() {
 }
 
 class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+  const MyWidget({super.key, this.name});
+  final String? name;
+
+  static const double kPadding = 8;
+  static String get yo => 'Hello, World!';
+
+  static void privateMethod() {
+    // ignore: avoid_print
+    print('Hello, World!');
+  }
+
+  String get text => 'Hello, World!';
+
+  void hi() {
+    // TODO(A): implement hi
+  }
 
   @override
   State<MyWidget> createState() => _MyWidgetState();
@@ -28,6 +46,8 @@ class _MyWidgetState extends State<MyWidget> with TickerProviderStateMixin {
   late final controller = AnimationController(vsync: this);
   late int count = 1 * 3;
 
+  late StreamSubscription timer;
+
   TextStyle get textStyle => const TextStyle(
         color: Colors.black,
         fontSize: 16,
@@ -35,6 +55,26 @@ class _MyWidgetState extends State<MyWidget> with TickerProviderStateMixin {
 
   // LINT: avoid_returning_widgets
   Widget _buildTextField() {
+    if (kDebugMode) {
+      if (kProfileMode) {
+        if (kReleaseMode) {
+          if (kDebugMode) {
+            if (kDebugMode) {}
+          }
+        }
+      }
+      if (kProfileMode) {
+        return const Padding(
+          padding: EdgeInsets.all(1),
+          child: TextField(
+            maxLength: 10,
+            decoration: InputDecoration(
+              labelText: 'Enter some text',
+            ),
+          ),
+        );
+      }
+    }
     return const Padding(
       padding: EdgeInsets.all(1),
       child: TextField(
@@ -162,6 +202,7 @@ class _MyWidgetState extends State<MyWidget> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
+    timer = Stream.empty().listen((event) {});
     try {} catch (e, s) {
       print(e);
       print(s);

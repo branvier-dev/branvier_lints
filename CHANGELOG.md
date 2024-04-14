@@ -1,6 +1,17 @@
 # Changelog
 
-## 0.3.1 - Mar 26, 2024
+## 0.3.3 - April 14, 2024
+
+- Updated `member_ordering`:
+  - Added `fields`.
+  - Removed `field_fields`, `private_fields` and `methods`.
+- Added `AnimationController`, `StreamSubscription` and `Timer` to `ignored_types` of `avoid_late_keyword` lint.
+
+## 0.3.2 - April 1, 2024
+
+- Bump `solid_lints` to `^0.1.5`.
+
+## 0.3.0 - Mar 26, 2024
 
 - Bump `custom_lint_builder` to `^0.6.4`.
 - Updated `analysis_options.yaml` docs.
