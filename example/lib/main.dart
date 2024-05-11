@@ -53,6 +53,10 @@ class _MyWidgetState extends State<MyWidget> with TickerProviderStateMixin {
         fontSize: 16,
       );
 
+  void setSomething() {
+    setState(() {});
+  }
+
   // LINT: avoid_returning_widgets
   Widget _buildTextField() {
     if (kDebugMode) {

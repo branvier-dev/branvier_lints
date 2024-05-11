@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.5 - May 11, 2024
+
+- Ignored `inference_failure_on_function_invocation`.
+
+## 0.3.4 - April 16, 2024
+
+- Removed `prefer_async_await`.
+
 ## 0.3.3 - April 14, 2024
 
 - Updated `member_ordering`:

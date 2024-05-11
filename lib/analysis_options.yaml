@@ -44,6 +44,7 @@ analyzer:
     included_file_warning: ignore # Why? We include all_lint_rules.yaml, which has conflicting rules.
     invalid_annotation_target: ignore # freezed
     inference_failure_on_instance_creation: ignore # Why? Discarded types are common like PageRoute<T> and Future<T>.delayed.
+    inference_failure_on_function_invocation: ignore # Why? Discarded types are common like showDialog<T>.
     missing_return: error # Why? Missing returns are a common source of bugs.
     parameter_assignments: error # Why? Reassigning parameters is a common source of bugs.
     missing_required_param: error # Why? Required parameters are required for a reason.
@@ -85,10 +86,11 @@ custom_lint:
     - avoid_unnecessary_type_assertions: false # flutter
     - prefer_first: false # pyramid
     - prefer_last: false # pyramid
-    - no_empty_block: false # pyramid
+    # - no_empty_block: false # pyramid
     - number_of_parameters: false #TODO - https://github.com/solid-software/solid_lints/issues/124
 
     # Pyramid - DISABLED
+    - avoid_empty_blocks: false # solid
     - avoid_dynamic: false # flutter
     - class_members_ordering: false # solid
     - max_lines_for_file: false # solid
@@ -96,7 +98,7 @@ custom_lint:
     - max_switch_cases: false # solid
     - avoid_public_members_in_states: false # not necessary
     - prefer_const_constructor_declarations: false #TODO - waiting for https://github.com/charlescyt/pyramid_lint/issues/20
-
+    - prefer_async_await: false # they are ok if used with tear-offs
 linter:
   rules:
     # Flutter - DISABLED:
