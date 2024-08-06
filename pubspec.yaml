@@ -1,6 +1,6 @@
 name: branvier_lints
 description: Lints used in Branvier projects.
-version: 0.3.5
+version: 0.3.6
 homepage: https://github.com/branvier-dev/branvier_lints
 topics: [branvier, lints, linter, analysis, analyzer]
 

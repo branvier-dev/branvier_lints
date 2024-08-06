@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.6 - Jul 30, 2024
+
+- Ignored `avoid_non_null_assertion`.
+
 ## 0.3.5 - May 11, 2024
 
 - Ignored `inference_failure_on_function_invocation`.

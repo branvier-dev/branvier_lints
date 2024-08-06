@@ -263,7 +263,6 @@ custom_lint:
     - avoid_returning_widgets
     - avoid_single_child_in_flex # quick_fix
     - avoid_unused_parameters
-    - boolean_prefixes
     - class_members_ordering
     - dispose_controllers # quick_fix
     - max_lines_for_file

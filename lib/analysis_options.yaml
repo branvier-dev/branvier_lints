@@ -87,6 +87,7 @@ custom_lint:
     - prefer_first: false # pyramid
     - prefer_last: false # pyramid
     # - no_empty_block: false # pyramid
+    - avoid_non_null_assertion: false # Cool, but sometimes needed.
     - number_of_parameters: false #TODO - https://github.com/solid-software/solid_lints/issues/124
 
     # Pyramid - DISABLED
