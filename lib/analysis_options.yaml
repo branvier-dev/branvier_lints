@@ -89,6 +89,8 @@ custom_lint:
     # - no_empty_block: false # pyramid
     - avoid_non_null_assertion: false # Cool, but sometimes needed.
     - number_of_parameters: false #TODO - https://github.com/solid-software/solid_lints/issues/124
+    - avoid_global_state: false #should be allowed if using @visibleForTesting
+    - avoid_late_keyword: false #has false positives
 
     # Pyramid - DISABLED
     - avoid_empty_blocks: false # solid
@@ -100,6 +102,8 @@ custom_lint:
     - avoid_public_members_in_states: false # not necessary
     - prefer_const_constructor_declarations: false #TODO - waiting for https://github.com/charlescyt/pyramid_lint/issues/20
     - prefer_async_await: false # they are ok if used with tear-offs
+    - avoid_mutable_global_variables: false # should be allowed if private
+    - boolean_prefixes: false # lets no enforce this for private booleans
 linter:
   rules:
     # Flutter - DISABLED:
@@ -129,3 +133,4 @@ linter:
     diagnostic_describe_all_properties: false # flutter
     public_member_api_docs: false # flutter and dart
     sort_pub_dependencies: false # flutter and dart
+    type_annotate_public_apis: false # flutter and dart

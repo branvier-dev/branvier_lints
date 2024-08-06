@@ -1,22 +1,30 @@
 # Changelog
 
+## 0.3.7 - Aug 6, 2024
+
+- Disabled `avoid_mutable_global_variables`.
+- Disabled `avoid_global_state`.
+- Disabled `avoid_late_keyword`.
+- Disabled `boolean_prefixes`.
+- Enable `type_annotate_public_apis` only on packages.
+
 ## 0.3.6 - Jul 30, 2024
 
-- Ignored `avoid_non_null_assertion`.
+- Disabled `avoid_non_null_assertion`.
 
 ## 0.3.5 - May 11, 2024
 
-- Ignored `inference_failure_on_function_invocation`.
+- Disabled `inference_failure_on_function_invocation`.
 
 ## 0.3.4 - April 16, 2024
 
-- Removed `prefer_async_await`.
+- Disabled `prefer_async_await`.
 
 ## 0.3.3 - April 14, 2024
 
 - Updated `member_ordering`:
   - Added `fields`.
-  - Removed `field_fields`, `private_fields` and `methods`.
+  - Disabled `field_fields`, `private_fields` and `methods`.
 - Added `AnimationController`, `StreamSubscription` and `Timer` to `ignored_types` of `avoid_late_keyword` lint.
 
 ## 0.3.2 - April 1, 2024
