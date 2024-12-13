@@ -1,4 +1,4 @@
-// ignore_for_file: implementation_imports, invalid_use_of_internal_member
+// ignore_for_file: implementation_imports, invalid_use_of_internal_member //
 
 /// Branvier Lints is a set of custom lints for Dart and Flutter projects.
 /// -
@@ -6,8 +6,7 @@
 /// Included lint libraries:
 /// - Dart Sdk Lints: https://dart.dev/tools/linter-rules/all
 /// - Solid Lints: https://pub.dev/packages/solid_lints
-///
-library branvier_lints;
+library;
 
 import 'package:custom_lint_builder/custom_lint_builder.dart';
 import 'package:pyramid_lint/pyramid_lint.dart' as pyramid;
@@ -59,6 +58,7 @@ extension on List<Assist> {
   /// Removes ListenableBuilder and ValueListenableBuilder wraps from assist.
   List<Assist> withoutListenableWraps() {
     removeWhere((e) => '${e.runtimeType}'.contains('Listenable'));
+
     return this;
   }
 }

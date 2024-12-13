@@ -17,7 +17,7 @@ class WrapWithAsyncBuilder extends DartAssist {
   ) {
     context.registry.addInstanceCreationExpression((node) {
       try {
-        // ignore: avoid_dynamic_calls
+        // ignore: avoid_dynamic_calls //
         final canTarget = target.intersects(node.constructorName.sourceRange);
         if (!(canTarget as bool)) return;
       } catch (_) {}

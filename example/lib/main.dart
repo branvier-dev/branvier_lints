@@ -1,5 +1,3 @@
-// ignore_for_file: unreachable_from_main
-
 import 'dart:async';
 
 import 'package:flutter/foundation.dart';
@@ -27,7 +25,7 @@ class MyWidget extends StatefulWidget {
   static String get yo => 'Hello, World!';
 
   static void privateMethod() {
-    // ignore: avoid_print
+    // ignore: avoid_print //
     print('Hello, World!');
   }
 
@@ -53,7 +51,9 @@ class _MyWidgetState extends State<MyWidget> with TickerProviderStateMixin {
         fontSize: 16,
       );
 
-  void setSomething() {
+  void setSomething(String name) {
+    name = '';
+
     setState(() {});
   }
 
@@ -106,7 +106,7 @@ class _MyWidgetState extends State<MyWidget> with TickerProviderStateMixin {
         height: size.height,
         child: Column(
           children: [
-            // ignore: avoid_single_child_in_multi_child_widgets
+            // ignore: avoid_single_child_in_multi_child_widgets //
             const Column(
               children: [
                 Placeholder(),
@@ -206,7 +206,7 @@ class _MyWidgetState extends State<MyWidget> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    timer = Stream.empty().listen((event) {});
+    timer = const Stream.empty().listen((event) {});
     try {} catch (e, s) {
       print(e);
       print(s);

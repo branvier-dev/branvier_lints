@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.4.0
+
+- Bump sdk to 3.6.0.
+- Bump solid_lints to 0.2.2.
+- Bump custom_lint_builder to 0.6.10.
+- Added `avoid_futureor_void`.
+- Added `document_ignores`.
+- Added `invalid_runtime_check_with_js_interop_types`.
+- Added `missing_code_block_language_in_doc_comment`.
+- Added `omit_obvious_local_variable_types`.
+- Added `specify_nonobvious_local_variable_types`.
+- Added `unintended_html_in_doc_comment`.
+- Added `unnecessary_library_name`.
+- Added `use_truncating_division`.
+- Removed `unsafe_html`.
+- Disabled `unreachable_from_main`.
+- Disabled `specify_nonobvious_local_variable_types`.
+
+## 0.3.8 - Sep 6, 2024
+
+- Ignored `parameter_assignments`
+- Bump custom_lint_builder to 0.6.5
+- Bump pyramid_lint to 2.0.1
+
 ## 0.3.7 - Aug 6, 2024
 
 - Disabled `avoid_mutable_global_variables`.

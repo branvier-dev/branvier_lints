@@ -46,7 +46,7 @@ analyzer:
     inference_failure_on_instance_creation: ignore # Why? Discarded types are common like PageRoute<T> and Future<T>.delayed.
     inference_failure_on_function_invocation: ignore # Why? Discarded types are common like showDialog<T>.
     missing_return: error # Why? Missing returns are a common source of bugs.
-    parameter_assignments: error # Why? Reassigning parameters is a common source of bugs.
+    parameter_assignments: ignore # Why? Reassigning parameters is cool.
     missing_required_param: error # Why? Required parameters are required for a reason.
 
 # Solid follows https://lints.solid.software/docs/rulesets/main guidelines.
@@ -117,6 +117,8 @@ linter:
     cascade_invocations: false # Why? Too opinionated, using them is fine, but let's not enforce it.
     always_specify_types: false # Why? Too verbose and opinionated and goes against Dart inference style.
     prefer_int_literals: false # Why? This rule makes it impossible to infer a num as double. Ex: var value = 0.0 // LINT.
+    unreachable_from_main: false # Why? Has false positive with extensions in main.
+    specify_nonobvious_local_variable_types: false # Why? Some classes can't be imported and typing is impossible.
 
     # CONFLICTS:
     prefer_double_quotes: false # Conflicts with prefer_single_quotes.

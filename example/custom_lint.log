@@ -479,3 +479,79 @@ at:
 #6      Future._completeError (dart:async/future_impl.dart:660:5)
 <asynchronous suspension>
 
+[custom_lint] 2024-12-13T16:38:06.502608 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/models/rule_config.dart:2:1: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:38:06.502608 import 'package:custom_lint_builder/custom_lint_builder.dart';
+[custom_lint] 2024-12-13T16:38:06.502608 ^^^^^^^^
+[custom_lint] 2024-12-13T16:38:06.502608 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/utils/parameter_utils.dart:3:1: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:38:06.502608 import 'package:custom_lint_builder/custom_lint_builder.dart';
+[custom_lint] 2024-12-13T16:38:06.502608 ^^^^^^^^
+[custom_lint] 2024-12-13T16:38:06.502608 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/avoid_unnecessary_type_assertions/avoid_unnecessary_type_assertions_rule.dart:48:37: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:38:06.502608   static const _unnecessaryIsCode = LintCode(
+[custom_lint] 2024-12-13T16:38:06.502608                                     ^^^^^^^^
+[custom_lint] 2024-12-13T16:38:06.502608 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/avoid_unnecessary_type_assertions/avoid_unnecessary_type_assertions_rule.dart:53:44: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:38:06.502608   static const _unnecessaryWhereTypeCode = LintCode(
+[custom_lint] 2024-12-13T16:38:06.502608                                            ^^^^^^^^
+[custom_lint] 2024-12-13T16:38:06.502608 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/double_literal_format/double_literal_format_rule.dart:37:35: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:38:06.502608   static const _leadingZeroCode = LintCode(
+[custom_lint] 2024-12-13T16:38:06.502608                                   ^^^^^^^^
+[custom_lint] 2024-12-13T16:38:06.502608 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/double_literal_format/double_literal_format_rule.dart:45:38: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:38:06.502608   static const _leadingDecimalCode = LintCode(
+[custom_lint] 2024-12-13T16:38:06.502608                                      ^^^^^^^^
+[custom_lint] 2024-12-13T16:38:06.502608 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/double_literal_format/double_literal_format_rule.dart:54:36: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:38:06.502608   static const _trailingZeroCode = LintCode(
+[custom_lint] 2024-12-13T16:38:06.502608                                    ^^^^^^^^
+[custom_lint] 2024-12-13T16:38:06.502608 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/models/rule_config.dart:38:28: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:38:06.502608   LintCode get lintCode => LintCode(
+[custom_lint] 2024-12-13T16:38:06.502608                            ^^^^^^^^
+[custom_lint] 2024-12-13T16:38:06.502608 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/utils/parameter_utils.dart:36:7: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:38:06.502608       LintCode(
+[custom_lint] 2024-12-13T16:38:06.502608       ^^^^^^^^
+[custom_lint] 2024-12-13T16:38:06.502608
+[custom_lint] 2024-12-13T16:38:06.502608
+Failed to start pluginsThe request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+Bad state: Failed to start the plugins.
+at:
+#0      SocketCustomLintServerToClientChannel._checkInitializationFail.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:223:11)
+<asynchronous suspension>
+#1      Future.any.onValue (dart:async/future.dart:614:5)
+<asynchronous suspension>
+
+[custom_lint] 2024-12-13T16:41:09.717857 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/models/rule_config.dart:2:1: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:41:09.717857 import 'package:custom_lint_builder/custom_lint_builder.dart';
+[custom_lint] 2024-12-13T16:41:09.717857 ^^^^^^^^
+[custom_lint] 2024-12-13T16:41:09.717857 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/utils/parameter_utils.dart:3:1: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:41:09.717857 import 'package:custom_lint_builder/custom_lint_builder.dart';
+[custom_lint] 2024-12-13T16:41:09.717857 ^^^^^^^^
+[custom_lint] 2024-12-13T16:41:09.717857 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/avoid_unnecessary_type_assertions/avoid_unnecessary_type_assertions_rule.dart:48:37: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:41:09.717857   static const _unnecessaryIsCode = LintCode(
+[custom_lint] 2024-12-13T16:41:09.717857                                     ^^^^^^^^
+[custom_lint] 2024-12-13T16:41:09.717857 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/avoid_unnecessary_type_assertions/avoid_unnecessary_type_assertions_rule.dart:53:44: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:41:09.717857   static const _unnecessaryWhereTypeCode = LintCode(
+[custom_lint] 2024-12-13T16:41:09.717857                                            ^^^^^^^^
+[custom_lint] 2024-12-13T16:41:09.717857 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/double_literal_format/double_literal_format_rule.dart:37:35: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:41:09.717857   static const _leadingZeroCode = LintCode(
+[custom_lint] 2024-12-13T16:41:09.717857                                   ^^^^^^^^
+[custom_lint] 2024-12-13T16:41:09.717857 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/double_literal_format/double_literal_format_rule.dart:45:38: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:41:09.717857   static const _leadingDecimalCode = LintCode(
+[custom_lint] 2024-12-13T16:41:09.717857                                      ^^^^^^^^
+[custom_lint] 2024-12-13T16:41:09.717857 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/lints/double_literal_format/double_literal_format_rule.dart:54:36: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:41:09.717857   static const _trailingZeroCode = LintCode(
+[custom_lint] 2024-12-13T16:41:09.717857                                    ^^^^^^^^
+[custom_lint] 2024-12-13T16:41:09.717857 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/models/rule_config.dart:38:28: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:41:09.717857   LintCode get lintCode => LintCode(
+[custom_lint] 2024-12-13T16:41:09.717857                            ^^^^^^^^
+[custom_lint] 2024-12-13T16:41:09.717857 /Users/art/.pub-cache/hosted/pub.dev/solid_lints-0.1.5/lib/src/utils/parameter_utils.dart:36:7: Error: 'LintCode' is imported from both 'package:analyzer/src/dart/error/lint_codes.dart' and 'package:custom_lint_core/src/lint_codes.dart'.
+[custom_lint] 2024-12-13T16:41:09.717857       LintCode(
+[custom_lint] 2024-12-13T16:41:09.717857       ^^^^^^^^
+[custom_lint] 2024-12-13T16:41:09.717857
+[custom_lint] 2024-12-13T16:41:09.717857
+Failed to start pluginsThe request analysis.setContextRoots failed with the following error:
+RequestErrorCode.PLUGIN_ERROR
+Bad state: Failed to start the plugins.
+at:
+#0      SocketCustomLintServerToClientChannel._checkInitializationFail.<anonymous closure> (package:custom_lint/src/v2/server_to_client_channel.dart:223:11)
+<asynchronous suspension>
+#1      Future.any.onValue (dart:async/future.dart:614:5)
+<asynchronous suspension>
+
