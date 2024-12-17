@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.1
+
+- Disable `prefer_border_radius_all` (pyramid).
+- Disable `prefer_border_from_border_side` (pyramid).
+- Disable `document_ignores`.
+- Disable `one_member_abstracts`.
+
 ## 0.4.0
 
 - Bump sdk to 3.6.0.

@@ -104,6 +104,8 @@ custom_lint:
     - prefer_async_await: false # they are ok if used with tear-offs
     - avoid_mutable_global_variables: false # should be allowed if private
     - boolean_prefixes: false # lets no enforce this for private booleans
+    - prefer_border_radius_all: false # unnecessary boilerplate
+    - prefer_border_from_border_side: false # unnecessary boilerplate
 linter:
   rules:
     # Flutter - DISABLED:
@@ -119,7 +121,9 @@ linter:
     prefer_int_literals: false # Why? This rule makes it impossible to infer a num as double. Ex: var value = 0.0 // LINT.
     unreachable_from_main: false # Why? Has false positive with extensions in main.
     specify_nonobvious_local_variable_types: false # Why? Some classes can't be imported and typing is impossible.
-
+    document_ignores: false # Why? Let's not enforce this.
+    one_member_abstracts: false # Why? Too opinionated. Architectural decisions should be made by the team.
+ 
     # CONFLICTS:
     prefer_double_quotes: false # Conflicts with prefer_single_quotes.
     avoid_annotating_with_dynamic: false # Conflicts with strict inference.
