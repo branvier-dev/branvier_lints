@@ -1,6 +1,6 @@
 # include: package:solid_lints/analysis_options.yaml
 
-# Dart SDK 3.6.0 lints: https://dart.dev/tools/linter-rules/all
+# Dart SDK 3.7.1 lints: https://dart.dev/tools/linter-rules/all
 linter:
   rules:
     - always_declare_return_types
@@ -112,10 +112,10 @@ linter:
     - null_closures
     - omit_local_variable_types
     - omit_obvious_local_variable_types
+    - omit_obvious_property_types
     - one_member_abstracts
     - only_throw_errors
     - overridden_fields
-    - package_api_docs
     - package_names
     - package_prefixed_library_names
     - parameter_assignments
@@ -171,6 +171,8 @@ linter:
     - sort_pub_dependencies
     - sort_unnamed_constructors_first
     - specify_nonobvious_local_variable_types
+    - specify_nonobvious_property_types
+    - strict_top_level_inference
     - test_types_in_equals
     - throw_in_finally
     - tighten_type_of_initializing_formals
@@ -179,6 +181,7 @@ linter:
     - type_literal_in_constant_pattern
     - unawaited_futures
     - unintended_html_in_doc_comment
+    - unnecessary_async
     - unnecessary_await_in_return
     - unnecessary_brace_in_string_interps
     - unnecessary_breaks
@@ -186,6 +189,7 @@ linter:
     - unnecessary_constructor_name
     - unnecessary_final
     - unnecessary_getters_setters
+    - unnecessary_ignore
     - unnecessary_lambdas
     - unnecessary_late
     - unnecessary_library_directive
@@ -204,8 +208,10 @@ linter:
     - unnecessary_string_interpolations
     - unnecessary_this
     - unnecessary_to_list_in_spreads
+    - unnecessary_underscores
     - unreachable_from_main
     - unrelated_type_equality_checks
+    - unsafe_variance
     - use_build_context_synchronously
     - use_colored_box
     - use_decorated_box
@@ -231,62 +237,34 @@ linter:
 
 custom_lint:
   rules:
-    #SECTION Solid Lints 0.1.4
-    - avoid_global_state
-    - avoid_late_keyword
-    - avoid_non_null_assertion
-    - avoid_returning_widgets
-    - avoid_unnecessary_setstate
-    - avoid_unnecessary_type_assertions
-    - avoid_unnecessary_type_casts
-    - avoid_unrelated_type_assertions
-    - avoid_unused_parameters
-    - avoid_using_api
-    - cyclomatic_complexity
-    - double_literal_format
-    - function_lines_of_code
-    - member_ordering
-    - newline_before_return
-    - no_empty_block # duplicate with avoid_empty_blocks (Pyramid Lint)
-    - no_equal_then_else
-    - no_magic_number
-    - number_of_parameters
-    - prefer_first # duplicate with prefer_iterable_first (Pyramid Lint)
-    - prefer_last # duplicate with prefer_iterable_last (Pyramid Lint)
-    - prefer_match_file_name
-    - proper_super_calls
-    - avoid_debug_print_in_release
-    - avoid_final_with_getter # quick_fix
-    - prefer_guard_clause # quick_fix?
-    #!SECTION
     #SECTION - Pyramid Lint 2.0.0
     - always_put_doc_comments_before_annotations # quick_fix
     - always_specify_parameter_names
     - avoid_abbreviations_in_doc_comments
-    - avoid_dynamic
-    - avoid_empty_blocks
+    - avoid_dynamic # off
+    - avoid_empty_blocks # off
     - avoid_inverted_boolean_expressions # quick_fix
     - avoid_mutable_global_variables
     - avoid_nested_if
     - avoid_positional_fields_in_records
-    - avoid_public_members_in_states
+    - avoid_public_members_in_states # off
     - avoid_redundant_pattern_field_names # quick_fix
-    - avoid_returning_widgets
+    - avoid_returning_widgets # off
     - avoid_single_child_in_flex # quick_fix
     - avoid_unused_parameters
     - boolean_prefixes
-    - class_members_ordering
+    - class_members_ordering # off
     - dispose_controllers # quick_fix
-    - max_lines_for_file
-    - max_lines_for_function 
-    - max_switch_cases
+    - max_lines_for_file # off
+    - max_lines_for_function # off
+    - max_switch_cases # off
     - no_duplicate_imports
     - no_self_comparisons
-    - prefer_async_await
+    - prefer_async_await # off
     - prefer_async_callback # quick_fix
     - prefer_border_from_border_side # quick_fix
     - prefer_border_radius_all # quick_fix
-    - prefer_const_constructor_declarations # quick_fix
+    - prefer_const_constructor_declarations # quick_fix # off
     - prefer_dedicated_media_query_functions # quick_fix
     - prefer_immediate_return # quick_fix
     - prefer_iterable_any # quick_fix

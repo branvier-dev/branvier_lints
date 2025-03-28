@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.0
+
+- Remove `solid_lints` dependency.
+- Remome all assists/wrappers.
+- Bump `pyramid_lint` to `^2.0.3`.
+- Bump `custom_lint_builder` to `^0.7.5`.
+- Update `all_lint_rules` to SDK 3.7.1.
+
 ## 0.4.1
 
 - Disable `prefer_border_radius_all` (pyramid).

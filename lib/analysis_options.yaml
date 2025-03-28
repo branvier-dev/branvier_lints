@@ -31,6 +31,7 @@ analyzer:
     - "test/.test_coverage.dart"
     - "bin/cache/**"
     - "lib/generated_plugin_registrant.dart"
+    - "lib/firebase_options.dart"
 
   # For more information see:
   # https://dart.dev/guides/language/analysis-options#enabling-additional-type-checks
@@ -53,45 +54,6 @@ analyzer:
 # Pyramid https://docs.page/charlescyt/pyramid_lint/available-lints
 custom_lint:
   rules:
-    # Solid - PREFERENCES
-    - member_ordering:
-      order:
-        - constructors
-        - fields
-        - getters_setters
-        - init_state_method
-        - overridden_methods
-        - dispose_method
-      widgets_order:
-        - constructors
-        - fields
-        - getters_setters
-        - init_state_method
-        - did_change_dependencies_method
-        - did_update_widget_method
-        - deactivate_method
-        - dispose_method
-        - build_method
-    - avoid_late_keyword:
-      allow_initialized: true # Why? Late variables are runtime safe if initialized.
-      ignored_types:
-        - AnimationController
-        - StreamSubscription<dynamic> #TODO - https://github.com/solid-software/solid_lints/issues/157
-        - Timer
-    - cyclomatic_complexity:
-      max_complexity: 10
-
-    # Solid - DISABLED
-    - no_magic_number: false # broken
-    - avoid_unnecessary_type_assertions: false # flutter
-    - prefer_first: false # pyramid
-    - prefer_last: false # pyramid
-    # - no_empty_block: false # pyramid
-    - avoid_non_null_assertion: false # Cool, but sometimes needed.
-    - number_of_parameters: false #TODO - https://github.com/solid-software/solid_lints/issues/124
-    - avoid_global_state: false #should be allowed if using @visibleForTesting
-    - avoid_late_keyword: false #has false positives
-
     # Pyramid - DISABLED
     - avoid_empty_blocks: false # solid
     - avoid_dynamic: false # flutter
@@ -106,6 +68,8 @@ custom_lint:
     - boolean_prefixes: false # lets no enforce this for private booleans
     - prefer_border_radius_all: false # unnecessary boilerplate
     - prefer_border_from_border_side: false # unnecessary boilerplate
+    - avoid_returning_widgets: false # conflicts with widget extensions
+    - avoid_positional_fields_in_records: false # sometimes they are necessary
 linter:
   rules:
     # Flutter - DISABLED:
