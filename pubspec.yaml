@@ -1,12 +1,12 @@
 name: branvier_lints
 description: Lints used in Branvier projects.
-version: 0.5.0
+version: 0.6.0
 homepage: https://github.com/branvier-dev/branvier_lints
 topics: [branvier, lints, linter, analysis, analyzer]
 
 environment:
-  sdk: '>=3.6.0 <4.0.0'
+  sdk: '>=3.8.0 <4.0.0'
 
 dependencies:
   custom_lint_builder: ^0.7.5
-  pyramid_lint: ^2.0.3
+  pyramid_lint: ^2.1.0

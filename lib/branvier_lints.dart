@@ -1,11 +1,10 @@
-// ignore_for_file: implementation_imports, invalid_use_of_internal_member //
+// ignore_for_file: invalid_use_of_internal_member //
 
 /// Branvier Lints is a set of custom lints for Dart and Flutter projects.
 /// -
 ///
 /// Included lint libraries:
 /// - Dart Sdk Lints: https://dart.dev/tools/linter-rules/all
-/// - Solid Lints: https://pub.dev/packages/solid_lints
 library;
 
 import 'package:custom_lint_builder/custom_lint_builder.dart';
@@ -18,7 +17,9 @@ PluginBase createPlugin() => _BranvierLints();
 class _BranvierLints extends PluginBase {
   @override
   List<LintRule> getLintRules(CustomLintConfigs configs) =>
-      pyramid.createPlugin().getLintRules(configs.withWarning());
+      rules ??= pyramid.createPlugin().getLintRules(configs.withWarning());
+
+  static List<LintRule>? rules;
 }
 
 extension on CustomLintConfigs {
@@ -29,10 +30,10 @@ extension on CustomLintConfigs {
       verbose: verbose,
       enableAllLintRules: enableAllLintRules,
       rules: rules.map((name, options) {
-        final newOptions = LintOptions.fromYaml(
-          {...options.json, 'severity': 'warning'},
-          enabled: options.enabled,
-        );
+        final newOptions = LintOptions.fromYaml({
+          ...options.json,
+          'severity': 'warning',
+        }, enabled: options.enabled);
 
         return MapEntry(name, newOptions);
       }),

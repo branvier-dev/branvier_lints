@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.0
+- Improved performance.
+- Bump `pyramid_lint` to `^2.1.0`.
+- Update `all_lint_rules` to SDK 3.8.0.
+
 ## 0.5.0
 
 - Remove `solid_lints` dependency.

@@ -1,6 +1,4 @@
-# include: package:solid_lints/analysis_options.yaml
-
-# Dart SDK 3.7.1 lints: https://dart.dev/tools/linter-rules/all
+# Dart SDK 3.8.0 lints: https://dart.dev/tools/linter-rules/all
 linter:
   rules:
     - always_declare_return_types
@@ -223,6 +221,7 @@ linter:
     - use_key_in_widget_constructors
     - use_late_for_private_fields_and_variables
     - use_named_constants
+    - use_null_aware_elements
     - use_raw_strings
     - use_rethrow_when_possible
     - use_setters_to_change_properties
@@ -237,58 +236,56 @@ linter:
 
 custom_lint:
   rules:
-    #SECTION - Pyramid Lint 2.0.0
-    - always_put_doc_comments_before_annotations # quick_fix
-    - always_specify_parameter_names
-    - avoid_abbreviations_in_doc_comments
-    - avoid_dynamic # off
-    - avoid_empty_blocks # off
-    - avoid_inverted_boolean_expressions # quick_fix
-    - avoid_mutable_global_variables
-    - avoid_nested_if
-    - avoid_positional_fields_in_records
-    - avoid_public_members_in_states # off
-    - avoid_redundant_pattern_field_names # quick_fix
-    - avoid_returning_widgets # off
+    #SECTION - Pyramid Lint 2.1.0
+    # - always_put_doc_comments_before_annotations # quick_fix
+    # - always_specify_parameter_names
+    # - avoid_abbreviations_in_doc_comments
+    # - avoid_dynamic   
+    # - avoid_empty_blocks
+    # - avoid_inverted_boolean_expressions # quick_fix
+    - avoid_mutable_global_variables        
+    # - avoid_nested_if
+    # - avoid_positional_fields_in_records
+    # - avoid_public_members_in_states
+    # - avoid_redundant_pattern_field_names # quick_fix
+    # - avoid_returning_widgets
     - avoid_single_child_in_flex # quick_fix
     - avoid_unused_parameters
-    - boolean_prefixes
-    - class_members_ordering # off
+    # - boolean_prefixes
+    # - class_members_ordering # off
     - dispose_controllers # quick_fix
-    - max_lines_for_file # off
-    - max_lines_for_function # off
-    - max_switch_cases # off
-    - no_duplicate_imports
+    # - max_lines_for_file # off
+    # - max_lines_for_function # off
+    # - max_switch_cases # off
+    # - no_duplicate_imports
     - no_self_comparisons
-    - prefer_async_await # off
-    - prefer_async_callback # quick_fix
-    - prefer_border_from_border_side # quick_fix
-    - prefer_border_radius_all # quick_fix
-    - prefer_const_constructor_declarations # quick_fix # off
+    # - prefer_async_await # off
+    # - prefer_async_callback # quick_fix
+    # - prefer_border_from_border_side # quick_fix
+    # - prefer_border_radius_all # quick_fix
+    # - prefer_const_constructor_declarations # quick_fix # off
     - prefer_dedicated_media_query_functions # quick_fix
-    - prefer_immediate_return # quick_fix
-    - prefer_iterable_any # quick_fix
-    - prefer_iterable_every # quick_fix
-    - prefer_iterable_first # quick_fix
-    - prefer_iterable_last # quick_fix
-    - prefer_library_prefixes # quick_fix
-    - prefer_new_line_before_return # quick_fix
-    - prefer_text_rich # quick_fix
-    - prefer_underscore_for_unused_callback_parameters
-    - prefer_void_callback # quick_fix
-    - proper_edge_insets_constructors # quick_fix
-    - proper_expanded_and_flexible
-    - proper_from_environment # quick_fix
-    - proper_super_dispose # quick_fix
-    - proper_super_init_state # quick_fix
+    # - prefer_immediate_return # quick_fix
+    # - prefer_iterable_any # quick_fix
+    # - prefer_iterable_every # quick_fix
+    # - prefer_iterable_first # quick_fix
+    # - prefer_iterable_last # quick_fix
+    # - prefer_library_prefixes # quick_fix
+    # - prefer_new_line_before_return # quick_fix
+    # - prefer_text_rich # quick_fix
+    # - prefer_underscore_for_unused_callback_parameters
+    # - prefer_void_callback # quick_fix
+    # - proper_edge_insets_constructors # quick_fix
+    - proper_expanded_and_flexible # quick_fix
+    # - proper_from_environment # quick_fix
+    # - proper_super_dispose # quick_fix
+    # - proper_super_init_state # quick_fix
+    # - specify_icon_button_tooltip
     - unnecessary_nullable_return_type # quick_fix
-    - use_spacer # quick_fix
+    # - use_spacer # quick_fix
     # assist InvertBooleanExpression
     # assist SwapThenElseExpression
     # assist UseEdgeInsetsZero
-    # assist WrapWithExpanded
     # assist WrapAllChildrenWithExpanded
     # assist WrapWithLayoutBuilder
     # assist WrapWithStack
-    # assist WrapWithValueListenableBuilder
-    # assist WrapWithValueListenableBuilder
