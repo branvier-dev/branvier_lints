@@ -1,6 +1,14 @@
 # Changelog
 
+## 0.7.0
+
+- Removed `unsafe_variance`.
+- Bump `pyramid_lint` to `2.3.0`.
+- Bump `custom_lint_builder` to `0.8.0`.
+- Update `all_lint_rules` to SDK 3.9.2: Added `switch_on_type` & `unnecessary_unawaited`.
+
 ## 0.6.0
+
 - Improved performance.
 - Bump `pyramid_lint` to `^2.1.0`.
 - Update `all_lint_rules` to SDK 3.8.0.

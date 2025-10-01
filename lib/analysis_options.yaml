@@ -57,7 +57,7 @@ linter:
     prefer_final_locals: false # Why? This has false positives with if-case statements and switch expressions.
     discarded_futures: false # Why? This has false positives with FutureBuilder and several other cases.
     use_setters_to_change_properties: false # Why? Actions needs to use the format. Ex: increment(int value) => _value = value + 1. Etc
-    avoid_types_on_closure_parameters: false # Why? False positives. Ex: final user = context.select((UserStore store) => store.user); 
+    avoid_types_on_closure_parameters: false # Why? False positives. Ex: final user = context.select((UserStore store) => store.user);
     always_put_control_body_on_new_line: false # Why? Single line if:s are fine and also recommended in Effective Dart "DO format your code using dartfmt".
     avoid_catches_without_on_clauses: false # Why? There are situations where we voluntarily want to catch everything, especially as a library. Flutter itself disables this rule.
     cascade_invocations: false # Why? Too opinionated, using them is fine, but let's not enforce it.
@@ -67,16 +67,17 @@ linter:
     specify_nonobvious_local_variable_types: false # Why? Some classes can't be imported and typing is impossible.
     document_ignores: false # Why? Let's not enforce this.
     one_member_abstracts: false # Why? Too opinionated. Architectural decisions should be made by the team.
- 
+
     # CONFLICTS:
     prefer_double_quotes: false # Conflicts with prefer_single_quotes.
     avoid_annotating_with_dynamic: false # Conflicts with strict inference.
     prefer_final_parameters: false # Conflicts with avoid_final_parameters and Flutter: `Widget build(final BuildContext context)`.
     prefer_expression_function_bodies: false # Conflicts with Flutter, which has a `build` method with a single return.
     always_put_required_named_parameters_first: false # Conflicts with Flutter, which puts `super.key` first and `required this.child` last.
-    avoid_positional_boolean_parameters: false # Conflicts with Flutter, which often uses such expressions: `void Function(bool) onChanged`.    
-    always_use_package_imports: false # Conflicts with prefer_relative imports. Flutter core and repo also prefers it over package imports. 
+    avoid_positional_boolean_parameters: false # Conflicts with Flutter, which often uses such expressions: `void Function(bool) onChanged`.
+    always_use_package_imports: false # Conflicts with prefer_relative imports. Flutter core and repo also prefers it over package imports.
     unnecessary_final: false  # Conflicts with prefer_final_locals, which makes the code more predictable and less prone to errors.
+    unsafe_variance: false # False positives impossible to handle. Ex: ValueChanged<T>.
 
     # ENABLE ONLY ON PACKAGES:
     do_not_use_environment: false # flutter and dart
