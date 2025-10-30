@@ -67,6 +67,7 @@ linter:
     specify_nonobvious_local_variable_types: false # Why? Some classes can't be imported and typing is impossible.
     document_ignores: false # Why? Let's not enforce this.
     one_member_abstracts: false # Why? Too opinionated. Architectural decisions should be made by the team.
+    switch_on_type: false # Why? False positives with dynamic.
 
     # CONFLICTS:
     prefer_double_quotes: false # Conflicts with prefer_single_quotes.
@@ -78,6 +79,8 @@ linter:
     always_use_package_imports: false # Conflicts with prefer_relative imports. Flutter core and repo also prefers it over package imports.
     unnecessary_final: false  # Conflicts with prefer_final_locals, which makes the code more predictable and less prone to errors.
     unsafe_variance: false # False positives impossible to handle. Ex: ValueChanged<T>.
+    specify_nonobvious_property_types: false # Conflicts with unnecessary type annotations.
+    flutter_style_todos: false # Conflicts with vscode flutter extension TODOs.
 
     # ENABLE ONLY ON PACKAGES:
     do_not_use_environment: false # flutter and dart

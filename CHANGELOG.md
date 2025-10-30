@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.1
+
+- Removed `specify_nonobvious_property_types`.
+- Removed `switch_on_type`.
+- Removed `flutter_style_todos`.
+
 ## 0.7.0
 
 - Removed `unsafe_variance`.
