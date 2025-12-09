@@ -23,7 +23,7 @@ analyzer:
   plugins:
     - custom_lint
   exclude:
-    - "**/*.g.dart"
+    # - "**/*.g.dart"
     - "**/*.freezed.dart"
     - '*.mocks.dart'
     - '**/*.mocks.dart'

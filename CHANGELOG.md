@@ -1,8 +1,15 @@
 # Changelog
 
+## 0.8.2
+
+- Allow `**/*.g.dart` as packages like `macro_kit` need it.
+
 ## 0.8.1
 
 - Removed `use_function_type_syntax_for_parameters`
+
+## 0.8.0
+
 - Bump `custom_lint_builder` to `0.8.1`.
 - Bump `pyramid_lint` to `2.4.0`.
 
