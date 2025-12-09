@@ -68,6 +68,7 @@ linter:
     document_ignores: false # Why? Let's not enforce this.
     one_member_abstracts: false # Why? Too opinionated. Architectural decisions should be made by the team.
     switch_on_type: false # Why? False positives with dynamic.
+    use_function_type_syntax_for_parameters: false # Why? It's more verbose and less readable in some cases.
 
     # CONFLICTS:
     prefer_double_quotes: false # Conflicts with prefer_single_quotes.

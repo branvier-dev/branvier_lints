@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.1
+
+- Removed `use_function_type_syntax_for_parameters`
+- Bump `custom_lint_builder` to `0.8.1`.
+- Bump `pyramid_lint` to `2.4.0`.
+
 ## 0.7.1
 
 - Removed `specify_nonobvious_property_types`.
