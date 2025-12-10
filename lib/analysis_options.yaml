@@ -39,7 +39,6 @@ analyzer:
     strict-raw-types: false # Why? Too verbose. Ex: Map<dynamic, dynamic> instead of Map.
 
   errors:
-    todo: ignore # Why? They are not errors, they are just todos.
     included_file_warning: ignore # Why? We include all_lint_rules.yaml, which has conflicting rules.
     invalid_annotation_target: ignore # freezed
     inference_failure_on_instance_creation: ignore # Why? Discarded types are common like PageRoute<T> and Future<T>.delayed.

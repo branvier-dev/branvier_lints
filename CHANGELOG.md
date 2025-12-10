@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.9.1
+
+- Enable `todos`.
+
 ## 0.9.0
 
 - Require plugin `custom_lint` on project `analysis_options.yaml`.
