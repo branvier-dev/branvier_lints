@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.10.0
+
+- Removed `pyramid_lints`.
+- Bump dart to `3.10.0`.
+- Added `simplify_variable_pattern`.
+
 ## 0.9.1
 
 - Enable `todos`.
